@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour
 {
+    public static GameplayManager instance;
+
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject youWinUI;
     [SerializeField] private GameObject ballPrefab;
@@ -15,6 +17,19 @@ public class GameplayManager : MonoBehaviour
     public static string playerName = "Player";
 
     private float score = 0;
+
+    private void Start()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void StartGame()
     {
