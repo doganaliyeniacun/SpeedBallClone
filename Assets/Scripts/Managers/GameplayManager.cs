@@ -10,7 +10,7 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] private Transform startPos;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject ballPrefab;
-    
+
 
     [Header("[Setting]")]
     [SerializeField] private float scoreRate = 2f;
@@ -34,11 +34,11 @@ public class GameplayManager : MonoBehaviour
 
     public void StartGame()
     {
-        resetVelocity();
         gameOverUI.SetActive(false);
         youWinUI.SetActive(false);
-        ballPrefab.transform.position = startPos.position;
         Time.timeScale = 1f;
+        resetBall();
+        ballPrefab.transform.position = startPos.position;
     }
 
     public void GameOver()
@@ -62,5 +62,5 @@ public class GameplayManager : MonoBehaviour
         scoreText.color = Random.ColorHSV();
     }
 
-    private void resetVelocity() => ballPrefab.GetComponent<Rigidbody>().velocity = Vector3.zero;
+    private void resetBall() => ballPrefab.GetComponent<BallMovement>().ResetSetting();
 }

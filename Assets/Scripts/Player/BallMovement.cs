@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,13 +8,31 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private Rigidbody rb;
 
     [Header("[Setting]")]
-    public float moveSpeed = 10f;
-    public float maxX = 5f;
-    private bool turn = false;
+    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private float maxX = 5f;
+
+    private float currentMoveSpeed = 0;
+    private Delay delay = new Delay();
+
+
+    private void Start()
+    {
+        currentMoveSpeed = moveSpeed;
+    }
+
 
     private void Update()
     {
-        rb.velocity += new Vector3(0f, 0f, 1f) * moveSpeed * Time.fixedDeltaTime;
+        rb.velocity += new Vector3(0, 0, 1f) * currentMoveSpeed * Time.deltaTime;
+
+        if (delay.Execute(1))
+        {
+            currentMoveSpeed += 0.05f;
+        }
+
+
+        print(currentMoveSpeed);
+
     }
 
     private void Turn(Vector2 direction)
@@ -30,11 +47,17 @@ public class BallMovement : MonoBehaviour
         rb.MovePosition(movement);
     }
 
-    
+
     private void OnMove(InputValue input)
     {
         Vector2 inputValue = input.Get<Vector2>();
 
         Turn(inputValue);
+    }
+
+    public void ResetSetting()
+    {
+        currentMoveSpeed = moveSpeed;
+        rb.velocity = Vector3.zero;
     }
 }

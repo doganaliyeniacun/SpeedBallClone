@@ -19,16 +19,16 @@ public class ObstacleSpawner : MonoBehaviour
         {
             if (i % 2 == 0)
             {                
-                Vector3 pos = new Vector3(-0.50f, transform.position.y + 1, (20 * (1 + i)) + (transform.position.z - 55));
-                Instantiate(obstaclePrefab, pos, Quaternion.identity);
+                Vector3 pos = new Vector3(-0.50f, transform.position.y + 1, (Random.Range(19,21) * (1 + i)) + (transform.position.z - 55));
+                Instantiate(obstaclePrefab, pos, Quaternion.identity);                
             }
             else
             {                
-                Vector3 pos = new Vector3(0.50f, transform.position.y + 1, (20 * (1 + i)) + (transform.position.z - 55));
+                Vector3 pos = new Vector3(0.50f, transform.position.y + 1, (Random.Range(19,21) * (1 + i)) + (transform.position.z - 55));
                 Instantiate(obstaclePrefab, pos, Quaternion.identity);
             }
 
-
+            
         }
 
     }
