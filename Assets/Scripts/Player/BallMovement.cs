@@ -29,10 +29,6 @@ public class BallMovement : MonoBehaviour
         {
             currentMoveSpeed += 0.05f;
         }
-
-
-        print(currentMoveSpeed);
-
     }
 
     private void Turn(Vector2 direction)
