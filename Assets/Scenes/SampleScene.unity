@@ -1337,9 +1337,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1347774650}
   youWinUI: {fileID: 1125249785}
-  ballPrefab: {fileID: 1874721969}
   startPos: {fileID: 2031777777}
   scoreText: {fileID: 356691461}
+  ballPrefab: {fileID: 1874721969}
   scoreRate: 2
 --- !u!1 &801566649
 GameObject:
@@ -2879,6 +2879,12 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2652734116757790536, guid: 0f9b205358015944a86c9c7b51d7b02c,
+        type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: e1741ce76bbbf9747bb76e68c4f0bf6f,
+        type: 3}
     - target: {fileID: 2652734116757790537, guid: 0f9b205358015944a86c9c7b51d7b02c,
         type: 3}
       propertyPath: m_CollisionDetection

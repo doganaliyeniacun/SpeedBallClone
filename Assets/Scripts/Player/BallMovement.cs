@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
 public class BallMovement : MonoBehaviour
@@ -12,19 +13,6 @@ public class BallMovement : MonoBehaviour
     public float maxX = 5f;
     private bool turn = false;
 
-
-    private void FixedUpdate()
-    {
-        if (turn)
-        {
-            Move(-maxX);
-        }
-        else
-        {
-            Move(maxX);
-        }
-    }
-
     private void Update()
     {
         rb.velocity += new Vector3(0f, 0f, 1f) * moveSpeed * Time.fixedDeltaTime;
@@ -35,12 +23,23 @@ public class BallMovement : MonoBehaviour
         turn = !turn;
     }
 
-    private void Move(float direction)
+    private void Turn(Vector2 direction)
     {
-        float targetPos = Mathf.Clamp(direction, -maxX, maxX);
+        if (direction.x == 0)
+        {
+            return;
+        }
+
+        float targetPos = Mathf.Clamp(direction.x * maxX, -maxX, maxX);
         Vector3 movement = new Vector3(targetPos, transform.position.y, transform.position.z);
         rb.MovePosition(movement);
     }
 
+    
+    private void OnMove(InputValue input)
+    {
+        Vector2 inputValue = input.Get<Vector2>();
 
+        Turn(inputValue);
+    }
 }
