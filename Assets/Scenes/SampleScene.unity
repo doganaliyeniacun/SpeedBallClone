@@ -210,7 +210,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98493811}
-  m_LocalRotation: {x: 0.27850178, y: 0.000000014959697, z: -0.000000008498527, w: 0.9604357}
+  m_LocalRotation: {x: 0.5070048, y: -0.00000005347101, z: 0.000000031452252, w: 0.86194324}
   m_LocalPosition: {x: 0.5, y: 2.8212426, z: 49.32658}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
+  m_LookAt: {fileID: 1874721973}
   m_Follow: {fileID: 1874721973}
   m_Lens:
     FieldOfView: 60
@@ -512,7 +512,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.2785018, y: 0.0000000149597, z: -0.000000008498528, w: 0.96043575}
+  m_LocalRotation: {x: 0.5070048, y: -0.00000005347101, z: 0.000000031452252, w: 0.86194324}
   m_LocalPosition: {x: 0.5, y: 2.8212426, z: 49.32658}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 1
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
