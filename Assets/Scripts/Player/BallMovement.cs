@@ -18,11 +18,6 @@ public class BallMovement : MonoBehaviour
         rb.velocity += new Vector3(0f, 0f, 1f) * moveSpeed * Time.fixedDeltaTime;
     }
 
-    private void OnClick()
-    {
-        turn = !turn;
-    }
-
     private void Turn(Vector2 direction)
     {
         if (direction.x == 0)
