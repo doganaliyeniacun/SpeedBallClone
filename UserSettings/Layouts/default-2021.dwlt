@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 36
+  controlID: 64
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 115
+  controlID: 170
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 120
+  controlID: 146
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 121
+  controlID: 147
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -319,17 +319,17 @@ MonoBehaviour:
     y: 0
     width: 735
     height: 307
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 22}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 22}
   - {fileID: 23}
   - {fileID: 24}
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1343,12 +1343,12 @@ MonoBehaviour:
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Ali\Desktop\Unity Folder\Projects\Mini_Oyun_Yapim_Egitimleri_Gorev-2-main
   m_LockTracker:
-    m_IsLocked: 0
+    m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ee820000
-    m_LastClickedID: 33518
-    m_ExpandedIDs: 00000000086a00000a6a00000c6a0000a26b000000ca9a3b
+    m_SelectedIDs: 826d0000
+    m_LastClickedID: 28034
+    m_ExpandedIDs: 000000006c6d00006e6d0000706d0000806d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1376,7 +1376,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000086a00000a6a00000c6a0000
+    m_ExpandedIDs: 000000006c6d00006e6d0000706d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1407,20 +1407,20 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: ObstacleParent
+      m_OriginalName: ObstacleParent
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 27400
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 3}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1508,20 +1508,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6abbf4ff
-      m_LastClickedID: -738454
-      m_ExpandedIDs: 109df5ff12fff5ff1cbdf8ff1ebdf8ffb80cfaff7ad7faffae90fcffb890fcff32bcfcffa8d0fcff5e9afdffc2a4fdffd838ffff10fbffff72690000846900008869000092690000b2690000
+      m_SelectedIDs: e66a0000
+      m_LastClickedID: 27366
+      m_ExpandedIDs: 9c05fdff1406fdff480ffdffc00ffdffd61cfdff9e54fdffce54fdff5660fdff0a6cfdff2479fdff2c80fdff6c0afeffb225feffca25feff4226feff7a34feff2a8dfeffc0faffffe2faffff10fbffff206a00006e6a0000786a00007c6a0000bc6a0000ea6a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: UI
-        m_OriginalName: UI
+        m_Name: Ball
+        m_OriginalName: Ball
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -208728
+        m_UserData: 27366
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -1783,9 +1783,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.4376338, y: 3.3344417, z: -31.73075}
+    m_Target: {x: -0.5, y: 0.75, z: 50.423485}
     speed: 2
-    m_Value: {x: -3.4376338, y: 3.3344417, z: -31.73075}
+    m_Value: {x: -0.5, y: 0.75, z: 50.423485}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1832,20 +1832,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.053368814, y: -0.6874815, z: 0.05089663, w: -0.72255313}
+    m_Target: {x: -0.04091533, y: -0.52976686, z: 0.02565948, w: -0.8469056}
     speed: 2
-    m_Value: {x: -0.05344103, y: -0.6863446, z: 0.05081265, w: -0.7235284}
+    m_Value: {x: -0.040910535, y: -0.5297048, z: 0.025656473, w: -0.84680635}
   m_Size:
-    m_Target: 1.7514241
+    m_Target: 0.46730927
     speed: 2
-    m_Value: 1.6760039
+    m_Value: 0.46730927
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -2000,22 +2000,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: 60
   m_LastProjectPath: C:\Users\Ali\Desktop\Unity Folder\Projects\Mini_Oyun_Yapim_Egitimleri_Gorev-2-main
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a26b0000
-    m_LastClickedID: 27554
-    m_ExpandedIDs: 00000000086a00000a6a00000c6a000000ca9a3b
+    m_SelectedIDs: 826d0000
+    m_LastClickedID: 28034
+    m_ExpandedIDs: 000000006c6d00006e6d0000706d0000806d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2043,7 +2043,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 20c7ffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000086a00000a6a00000c6a0000
+    m_ExpandedIDs: 000000006c6d00006e6d0000706d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2068,8 +2068,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 126a0000
+    m_LastClickedInstanceID: 27154
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300007c64000024c7fffff4620000446400008c8d00008a8d0000
     m_RenameOverlay:
@@ -2229,4 +2229,4 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -738454
+  m_LastSelectedObjectID: 27366
